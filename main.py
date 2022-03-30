@@ -8,7 +8,7 @@ class Game:
         self.timeHandler = asciiEngine.Time()
 
     def Run(self):
-        self.window.draw("A\n" * 30, (255, 255, 255), (10, 10))
+        self.window.draw((("A" * 180) + "\n") * 30, (255, 255, 255), (10, 10))
         self.window.createWindow()
 
         while self.running:
